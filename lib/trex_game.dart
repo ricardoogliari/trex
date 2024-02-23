@@ -27,6 +27,9 @@ class TRexGame extends FlameGame with KeyboardEvents, TapCallbacks, HasCollision
   }
 
   @override
+  Color backgroundColor() => const Color(0xFFFFFFFF);
+
+  @override
   Future<void> onLoad() async {
     spriteImage = await Flame.images.load('trex.png');
 
